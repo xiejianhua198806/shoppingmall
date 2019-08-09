@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div class="goods-image">
+      <div class="goods-image" @click="goGoodsPage()">
         <img v-lazy="goodsImage" width="90%" />
       </div>
     </div>
@@ -20,6 +20,11 @@ export default {
   filters: {
     moneyFilter(val) {
       return toMoney(val);
+    }
+  },
+  methods: {
+    goGoodsPage() {
+      this.$router.push({ name: "Goods", query: { goodsId: this.goodsId } });
     }
   }
 };

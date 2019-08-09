@@ -118,13 +118,11 @@ export default {
     goodsInfo
   },
   created() {
-    console.log();
     axios({
       url: url.getShoppingMallInfo,
       method: "post"
     })
       .then(response => {
-        console.log(response);
         if (response.status == 200) {
           this.bannerPicArray = response.data.data.slides;
           this.category = response.data.data.category;
