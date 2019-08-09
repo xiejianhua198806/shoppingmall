@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 let router = new Router()
 
 router.get('/', async (ctx) => {
-  ctx.body = '这是用户操作首页'
+  ctx.body = '这是主管登录和注册的页面'
 })
 
 // 注册
