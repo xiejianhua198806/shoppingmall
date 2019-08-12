@@ -24,3 +24,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 GitHub Token: 1b840be1d7cc8e773b3ebfaec36f3cbbb732fab7
 GitHub Gist: 86874759a8e75452496058a5898ab769
+
+浏览器运行地址：http://localhost:8080/#/mian/
+起动该项目需要 起动 npm run dev
+              cd 到service 下 然后起动 node index.js
+              cd 到 c:下 起动 mongod 
