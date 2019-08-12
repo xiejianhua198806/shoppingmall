@@ -128,8 +128,9 @@ export default {
           if (response.data.code == 200 && response.data.message) {
             this.categorySub = response.data.message;
             this.active = 0;
-            thid.categoryId = this.this.categorySub[0].ID;
-            this.onLoad();
+            this.categoryId = this.categorySub[0].ID;
+            this.categorySubId = this.categorySub[0].ID;
+            this.getGoodList();
           } else {
             Toast("服务器错误，数据取得失败");
           }
